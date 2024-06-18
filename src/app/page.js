@@ -5,6 +5,7 @@ import { gsap } from 'gsap'
 
 import Landing from '@/components/Landing'
 import Preloader from '@/components/Preloader'
+import Service from '@/components/Service'
 
 export default function Home() {
   const [loaderFinished, setLoaderFinished] = useState(false)
@@ -23,7 +24,14 @@ export default function Home() {
 
   return (
     <main>
-      {loaderFinished ? <Landing /> : <Preloader timeline={timeline} />}
+      {loaderFinished ? (
+        <>
+          <Landing />
+          <Service />
+        </>
+      ) : (
+        <Preloader timeline={timeline} />
+      )}
     </main>
   )
 }
