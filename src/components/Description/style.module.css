@@ -1,0 +1,18 @@
+/* style.module.css */
+
+.square {
+  position: relative;
+  width: 100px; /* Tamanho do quadrado */
+  height: 100px; /* Tamanho do quadrado */
+  border: 1px solid #000; /* Borda para visualização */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.arrow {
+  width: 50px; /* Tamanho do SVG */
+  height: 50px; /* Tamanho do SVG */
+  transition: transform 0.3s ease; /* Transição suave */
+}
